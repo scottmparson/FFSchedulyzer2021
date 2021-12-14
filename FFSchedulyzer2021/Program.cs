@@ -402,11 +402,11 @@ namespace FFSchedulyzer2021
                 if (team.ties == 0)
                 {
                     //Console.WriteLine(team.name + "'s actual record is: " + team.wins + "-" + team.losses + " | PF: " + team.pointsFor);
-                    Console.WriteLine(string.Format("{0}'s actual record is: {1}-{2} | PF: {3}", team.name, team.wins, team.losses, team.pointsFor));
+                    Console.WriteLine(string.Format("{0}'s actual record is: {1}-{2} | PF: {3}", team.name, team.wins, team.losses, Math.Round(team.pointsFor, 2)));
                 }
                 else
                 {
-                    Console.WriteLine(team.name + "'s actual record is: " + team.wins + "-" + team.losses + "-" + team.ties + " | PF: " + team.pointsFor);
+                    Console.WriteLine(team.name + "'s actual record is: " + team.wins + "-" + team.losses + "-" + team.ties + " | PF: " + Math.Round(team.pointsFor, 2));
                 }
                 team.actualWins = team.wins;
                 team.totalWins += team.wins;
@@ -423,7 +423,7 @@ namespace FFSchedulyzer2021
             }
             else
             {
-                var table = new ConsoleTable("Schedule", "Record", "Better/Worse");
+                //var table = new ConsoleTable("Schedule", "Record", "Better/Worse");
                 for (int i = 0; i < team.scores.Length; i++)
                 {
                     //Preserve H2H records
