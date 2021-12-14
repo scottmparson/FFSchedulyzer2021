@@ -9,343 +9,344 @@ namespace FFSchedulyzer2021
     class Program
     {
 
-        private static Team? Beth, Brandon, Bryan, Daniel, Eric, Evan, Julie, Kevin, Kim, Kyle, Nate, Scott;
+        private static Team? Team1, Team2, Team3, Team4, Team5, Team6, Team7, Team8, Team9, Team10, Team11, Team12;
 
         static void Main(string[] args)
         {
-            Beth = new Team("Better than 2020", new double[]
+            //Beth
+            Team1 = new Team("Better than 2020", new double[]
             {
                 131.3, 100.96, 75.47, 89.57, 87.17, 71.15, 72.14, 91.52, 61.81, 62.92, 88.67, 31.51, 87.41, 90.07
             });
 
             //Brandon
-            Brandon = new Team("Isaiah's Mugger", new double[]
+            Team2 = new Team("Isaiah's Mugger", new double[]
             {
                 117.32, 123.72, 139.73, 68.33, 153.61, 101.08, 141.65, 100.51, 106.52, 103.61, 108.08, 98.39, 150.79, 114.78
             });
 
             //Bryan
-            Bryan = new Team("Bus Wankers", new double[] {
+            Team3 = new Team("Bus Wankers", new double[] {
                125.47, 160.4, 102.38, 132.69, 92.68, 77.59, 120.11, 83.88, 79.08, 83.05, 125.22, 72.71, 114.8, 130.49
             });
 
             //Daniel
-            Daniel = new Team("I'M PICKLE RICK", new double[]
+            Team4 = new Team("I'M PICKLE RICK", new double[]
             {
                 84.43, 86.13, 117.35, 107.01, 121.74, 147.01, 97.69, 98.26, 78.04, 87.72, 106.69, 117.64, 60.32, 126.84
             });
 
             //Eric
-            Eric = new Team("The Midnight Society", new double[]
+            Team5 = new Team("The Midnight Society", new double[]
             {
                 101.86, 83.85, 56.67, 123.42, 97.66, 112.29, 103.08, 122.17, 110.29, 98.09, 101.66, 77.51, 126.86, 114.29
             });
 
             //Evan
-            Evan = new Team("Lot Lizard King", new double[]
+            Team6 = new Team("Lot Lizard King", new double[]
             {
                 89.64, 108.59, 122.38, 92.65, 178.02, 77.73, 97.28, 101.53, 127.97, 98.24, 148.33, 105.28, 127.39, 130.39
             });
 
             //Julie
-            Julie = new Team("DontDraft BlackedOut", new double[]
+            Team7 = new Team("DontDraft BlackedOut", new double[]
             {
                 65.39, 133.63, 91.42, 104.23, 168.97, 127.52, 116.97, 91.08, 64.61, 101.38, 118.88, 108.79, 114.67, 150.95
             });
 
             //Kevin
-            Kevin = new Team("Deep Loggins", new double[]
+            Team8 = new Team("Deep Loggins", new double[]
             {
                 116.93, 110.76, 92.77, 115.64, 133.24, 142.66, 54.12, 100.09, 105.37, 113.83, 83.39, 108.6, 96.4, 45.53
             });
 
             //Kim
-            Kim = new Team("The Blue Bandaids", new double[]
+            Team9 = new Team("The Blue Bandaids", new double[]
             {
                 129.48, 93.94, 108.9, 121.05, 97.35, 134.69, 93.34, 104.24, 57.01, 95.25, 130.6, 129.0, 74.49, 106.8
             });
 
             //Kyle
-            Kyle = new Team("Morehead Felaters", new double[]
+            Team10 = new Team("Morehead Felaters", new double[]
             {
                101.31, 100.66, 110.28, 80.2, 100.99, 131.0, 120.34, 106.35, 96.51, 102.3, 96.11, 118.4, 122.6, 125.77
             });
 
             //Nate
-            Nate = new Team("Nilbog Dance Academy", new double[]
+            Team11 = new Team("Nilbog Dance Academy", new double[]
             {
                 107.75, 90.65, 120.68, 130.79, 155.74, 94.74, 116.93, 118.4, 108.0, 51.53, 92.62, 94.17, 115.5, 123.15
             });
 
             //Scott
-            Scott = new Team("Salsa Sharks", new double[]
+            Team12 = new Team("Salsa Sharks", new double[]
             {
                 115.55, 130.19, 131.86, 106.35, 137.31, 114.61, 117.49, 92.84, 72.56, 98.09, 92.27, 63.87, 91.11, 104.8
             });
 
-            Beth.SetSchedule(new Team[]
+            Team1.SetSchedule(new Team[]
             {
-                Evan, Julie, Kim, Scott, Bryan, Nate, Brandon, Daniel, Kyle, Kevin, Eric, Evan, Julie, Kim
+                Team6, Team7, Team9, Team12, Team3, Team11, Team2, Team4, Team10, Team8, Team5, Team6, Team7, Team9
             });
-            Brandon.SetSchedule(new Team[]
+            Team2.SetSchedule(new Team[]
             {
-                Scott, Bryan, Nate, Kevin, Daniel, Kyle, Beth, Eric, Evan, Julie, Kim, Scott, Bryan, Nate
+                Team12, Team3, Team11, Team8, Team4, Team10, Team1, Team5, Team6, Team7, Team9, Team12, Team3, Team11
             });
-            Bryan.SetSchedule(new Team[]
+            Team3.SetSchedule(new Team[]
             {
-                Nate, Brandon, Daniel, Kyle, Beth, Eric, Evan, Julie, Kim, Scott, Kevin, Nate, Brandon, Daniel
+                Team11, Team2, Team4, Team10, Team1, Team5, Team6, Team7, Team9, Team12, Team8, Team11, Team2, Team4
             });
-            Daniel.SetSchedule(new Team[]
+            Team4.SetSchedule(new Team[]
             {
-                Kim, Scott, Bryan, Nate, Brandon, Kevin, Kyle, Beth, Eric, Evan, Julie, Kim, Scott, Bryan
+                Team9, Team12, Team3, Team11, Team2, Team8, Team10, Team1, Team5, Team6, Team7, Team9, Team12, Team3
             });
-            Eric.SetSchedule(new Team[]
+            Team5.SetSchedule(new Team[]
             {
-                Kevin, Evan, Julie, Kim, Scott, Bryan, Nate, Brandon, Daniel, Kyle, Beth, Kevin, Evan, Julie   
+                Team8, Team6, Team7, Team9, Team12, Team3, Team11, Team2, Team4, Team10, Team1, Team8, Team6, Team7   
             });
-            Evan.SetSchedule(new Team[]
+            Team6.SetSchedule(new Team[]
             {
-                Beth, Eric, Kevin, Julie, Kim, Scott, Bryan, Nate, Brandon, Daniel, Kyle, Beth, Eric, Kevin
+                Team1, Team5, Team8, Team7, Team9, Team12, Team3, Team11, Team2, Team4, Team10, Team1, Team5, Team8
             });
-            Julie.SetSchedule(new Team[]
+            Team7.SetSchedule(new Team[]
             {
-                Kyle, Beth, Eric, Evan, Kevin, Kim, Scott, Bryan, Nate, Brandon, Daniel, Kyle, Beth, Eric
+                Team10, Team1, Team5, Team6, Team8, Team9, Team12, Team3, Team11, Team2, Team4, Team10, Team1, Team5
             });
-            Kevin.SetSchedule(new Team[]
+            Team8.SetSchedule(new Team[]
             {
-                Eric, Nate, Evan, Brandon, Julie, Daniel, Kim, Kyle, Scott, Beth, Bryan, Eric, Nate, Evan
+                Team5, Team11, Team6, Team2, Team7, Team4, Team9, Team10, Team12, Team1, Team3, Team5, Team11, Team6
             });
-            Kim.SetSchedule(new Team[]
+            Team9.SetSchedule(new Team[]
             {
-                Daniel, Kyle, Beth, Eric, Evan, Julie, Kevin, Scott, Bryan, Nate, Brandon, Daniel, Kyle, Beth
+                Team4, Team10, Team1, Team5, Team6, Team7, Team8, Team12, Team3, Team11, Team2, Team4, Team10, Team1
             });
-            Kyle.SetSchedule(new Team[]
+            Team10.SetSchedule(new Team[]
             {
-                Julie, Kim, Scott, Bryan, Nate, Brandon, Daniel, Kevin, Beth, Eric, Evan, Julie, Kim, Scott
+                Team7, Team9, Team12, Team3, Team11, Team2, Team4, Team8, Team1, Team5, Team6, Team7, Team9, Team12
             });
-            Nate.SetSchedule(new Team[]
+            Team11.SetSchedule(new Team[]
             {
-                Bryan, Kevin, Brandon, Daniel, Kyle, Beth, Eric, Evan, Julie, Kim, Scott, Bryan, Kevin, Brandon
+                Team3, Team8, Team2, Team4, Team10, Team1, Team5, Team6, Team7, Team9, Team12, Team3, Team8, Team2
             });
-            Scott.SetSchedule(new Team[]
+            Team12.SetSchedule(new Team[]
             {
-                Brandon, Daniel, Kyle, Beth, Eric, Evan, Julie, Kim, Kevin, Bryan, Nate, Brandon, Daniel, Kyle
+                Team2, Team4, Team10, Team1, Team5, Team6, Team7, Team9, Team8, Team3, Team11, Team2, Team4, Team10
             });
 
             List<Team> league = new List<Team>();
-            league.Add(Beth);
-            league.Add(Brandon);
-            league.Add(Bryan);
-            league.Add(Daniel);
-            league.Add(Eric);
-            league.Add(Evan);
-            league.Add(Julie);
-            league.Add(Kevin);
-            league.Add(Kim);
-            league.Add(Kyle);
-            league.Add(Nate);
-            league.Add(Scott);
+            league.Add(Team1);
+            league.Add(Team2);
+            league.Add(Team3);
+            league.Add(Team4);
+            league.Add(Team5);
+            league.Add(Team6);
+            league.Add(Team7);
+            league.Add(Team8);
+            league.Add(Team9);
+            league.Add(Team10);
+            league.Add(Team11);
+            league.Add(Team12);
 
-            AnalyzeSchedule(Beth);
-            AnalyzeSchedule(Beth, Brandon);
-            AnalyzeSchedule(Beth, Bryan);
-            AnalyzeSchedule(Beth, Daniel);
-            AnalyzeSchedule(Beth, Eric);
-            AnalyzeSchedule(Beth, Evan);
-            AnalyzeSchedule(Beth, Julie);
-            AnalyzeSchedule(Beth, Kevin);
-            AnalyzeSchedule(Beth, Kim);
-            AnalyzeSchedule(Beth, Kyle);
-            AnalyzeSchedule(Beth, Nate);
-            AnalyzeSchedule(Beth, Scott);
-            Console.WriteLine("Total Wins: " + Beth.totalWins);
+            AnalyzeSchedule(Team1);
+            AnalyzeSchedule(Team1, Team2);
+            AnalyzeSchedule(Team1, Team3);
+            AnalyzeSchedule(Team1, Team4);
+            AnalyzeSchedule(Team1, Team5);
+            AnalyzeSchedule(Team1, Team6);
+            AnalyzeSchedule(Team1, Team7);
+            AnalyzeSchedule(Team1, Team8);
+            AnalyzeSchedule(Team1, Team9);
+            AnalyzeSchedule(Team1, Team10);
+            AnalyzeSchedule(Team1, Team11);
+            AnalyzeSchedule(Team1, Team12);
+            Console.WriteLine("Total Wins: " + Team1.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Brandon);
-            AnalyzeSchedule(Brandon, Beth);
-            AnalyzeSchedule(Brandon, Bryan);
-            AnalyzeSchedule(Brandon, Daniel);
-            AnalyzeSchedule(Brandon, Eric);
-            AnalyzeSchedule(Brandon, Evan);
-            AnalyzeSchedule(Brandon, Julie);
-            AnalyzeSchedule(Brandon, Kevin);
-            AnalyzeSchedule(Brandon, Kim);
-            AnalyzeSchedule(Brandon, Kyle);
-            AnalyzeSchedule(Brandon, Nate);
-            AnalyzeSchedule(Brandon, Scott);
-            Console.WriteLine("Total Wins: " + Brandon.totalWins);
+            AnalyzeSchedule(Team2);
+            AnalyzeSchedule(Team2, Team1);
+            AnalyzeSchedule(Team2, Team3);
+            AnalyzeSchedule(Team2, Team4);
+            AnalyzeSchedule(Team2, Team5);
+            AnalyzeSchedule(Team2, Team6);
+            AnalyzeSchedule(Team2, Team7);
+            AnalyzeSchedule(Team2, Team8);
+            AnalyzeSchedule(Team2, Team9);
+            AnalyzeSchedule(Team2, Team10);
+            AnalyzeSchedule(Team2, Team11);
+            AnalyzeSchedule(Team2, Team12);
+            Console.WriteLine("Total Wins: " + Team2.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Bryan);
-            AnalyzeSchedule(Bryan, Beth);
-            AnalyzeSchedule(Bryan, Brandon);
-            AnalyzeSchedule(Bryan, Daniel);
-            AnalyzeSchedule(Bryan, Eric);
-            AnalyzeSchedule(Bryan, Evan);
-            AnalyzeSchedule(Bryan, Julie);
-            AnalyzeSchedule(Bryan, Kevin);
-            AnalyzeSchedule(Bryan, Kim);
-            AnalyzeSchedule(Bryan, Kyle);
-            AnalyzeSchedule(Bryan, Nate);
-            AnalyzeSchedule(Bryan, Scott);
-            Console.WriteLine("Total Wins: " + Bryan.totalWins);
+            AnalyzeSchedule(Team3);
+            AnalyzeSchedule(Team3, Team1);
+            AnalyzeSchedule(Team3, Team2);
+            AnalyzeSchedule(Team3, Team4);
+            AnalyzeSchedule(Team3, Team5);
+            AnalyzeSchedule(Team3, Team6);
+            AnalyzeSchedule(Team3, Team7);
+            AnalyzeSchedule(Team3, Team8);
+            AnalyzeSchedule(Team3, Team9);
+            AnalyzeSchedule(Team3, Team10);
+            AnalyzeSchedule(Team3, Team11);
+            AnalyzeSchedule(Team3, Team12);
+            Console.WriteLine("Total Wins: " + Team3.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Daniel);
-            AnalyzeSchedule(Daniel, Beth);
-            AnalyzeSchedule(Daniel, Brandon);
-            AnalyzeSchedule(Daniel, Bryan);
-            AnalyzeSchedule(Daniel, Eric);
-            AnalyzeSchedule(Daniel, Evan);
-            AnalyzeSchedule(Daniel, Julie);
-            AnalyzeSchedule(Daniel, Kevin);
-            AnalyzeSchedule(Daniel, Kim);
-            AnalyzeSchedule(Daniel, Kyle);
-            AnalyzeSchedule(Daniel, Nate);
-            AnalyzeSchedule(Daniel, Scott);
-            Console.WriteLine("Total Wins: " + Daniel.totalWins);
+            AnalyzeSchedule(Team4);
+            AnalyzeSchedule(Team4, Team1);
+            AnalyzeSchedule(Team4, Team2);
+            AnalyzeSchedule(Team4, Team3);
+            AnalyzeSchedule(Team4, Team5);
+            AnalyzeSchedule(Team4, Team6);
+            AnalyzeSchedule(Team4, Team7);
+            AnalyzeSchedule(Team4, Team8);
+            AnalyzeSchedule(Team4, Team9);
+            AnalyzeSchedule(Team4, Team10);
+            AnalyzeSchedule(Team4, Team11);
+            AnalyzeSchedule(Team4, Team12);
+            Console.WriteLine("Total Wins: " + Team4.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Eric);
-            AnalyzeSchedule(Eric, Beth);
-            AnalyzeSchedule(Eric, Brandon);
-            AnalyzeSchedule(Eric, Bryan);
-            AnalyzeSchedule(Eric, Daniel);
-            AnalyzeSchedule(Eric, Evan);
-            AnalyzeSchedule(Eric, Julie);
-            AnalyzeSchedule(Eric, Kevin);
-            AnalyzeSchedule(Eric, Kim);
-            AnalyzeSchedule(Eric, Kyle);
-            AnalyzeSchedule(Eric, Nate);
-            AnalyzeSchedule(Eric, Scott);
-            Console.WriteLine("Total Wins: " + Eric.totalWins);
+            AnalyzeSchedule(Team5);
+            AnalyzeSchedule(Team5, Team1);
+            AnalyzeSchedule(Team5, Team2);
+            AnalyzeSchedule(Team5, Team3);
+            AnalyzeSchedule(Team5, Team4);
+            AnalyzeSchedule(Team5, Team6);
+            AnalyzeSchedule(Team5, Team7);
+            AnalyzeSchedule(Team5, Team8);
+            AnalyzeSchedule(Team5, Team9);
+            AnalyzeSchedule(Team5, Team10);
+            AnalyzeSchedule(Team5, Team11);
+            AnalyzeSchedule(Team5, Team12);
+            Console.WriteLine("Total Wins: " + Team5.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Evan);
-            AnalyzeSchedule(Evan, Beth);
-            AnalyzeSchedule(Evan, Brandon);
-            AnalyzeSchedule(Evan, Bryan);
-            AnalyzeSchedule(Evan, Daniel);
-            AnalyzeSchedule(Evan, Eric);
-            AnalyzeSchedule(Evan, Julie);
-            AnalyzeSchedule(Evan, Kevin);
-            AnalyzeSchedule(Evan, Kim);
-            AnalyzeSchedule(Evan, Kyle);
-            AnalyzeSchedule(Evan, Nate);
-            AnalyzeSchedule(Evan, Scott);
-            Console.WriteLine("Total Wins: " + Evan.totalWins);
+            AnalyzeSchedule(Team6);
+            AnalyzeSchedule(Team6, Team1);
+            AnalyzeSchedule(Team6, Team2);
+            AnalyzeSchedule(Team6, Team3);
+            AnalyzeSchedule(Team6, Team4);
+            AnalyzeSchedule(Team6, Team5);
+            AnalyzeSchedule(Team6, Team7);
+            AnalyzeSchedule(Team6, Team8);
+            AnalyzeSchedule(Team6, Team9);
+            AnalyzeSchedule(Team6, Team10);
+            AnalyzeSchedule(Team6, Team11);
+            AnalyzeSchedule(Team6, Team12);
+            Console.WriteLine("Total Wins: " + Team6.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Julie);
-            AnalyzeSchedule(Julie, Beth);
-            AnalyzeSchedule(Julie, Brandon);
-            AnalyzeSchedule(Julie, Bryan);
-            AnalyzeSchedule(Julie, Daniel);
-            AnalyzeSchedule(Julie, Evan);
-            AnalyzeSchedule(Julie, Eric);
-            AnalyzeSchedule(Julie, Kevin);
-            AnalyzeSchedule(Julie, Kim);
-            AnalyzeSchedule(Julie, Kyle);
-            AnalyzeSchedule(Julie, Nate);
-            AnalyzeSchedule(Julie, Scott);
-            Console.WriteLine("Total Wins: " + Julie.totalWins);
+            AnalyzeSchedule(Team7);
+            AnalyzeSchedule(Team7, Team1);
+            AnalyzeSchedule(Team7, Team2);
+            AnalyzeSchedule(Team7, Team3);
+            AnalyzeSchedule(Team7, Team4);
+            AnalyzeSchedule(Team7, Team6);
+            AnalyzeSchedule(Team7, Team5);
+            AnalyzeSchedule(Team7, Team8);
+            AnalyzeSchedule(Team7, Team9);
+            AnalyzeSchedule(Team7, Team10);
+            AnalyzeSchedule(Team7, Team11);
+            AnalyzeSchedule(Team7, Team12);
+            Console.WriteLine("Total Wins: " + Team7.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Kevin);
-            AnalyzeSchedule(Kevin, Beth);
-            AnalyzeSchedule(Kevin, Brandon);
-            AnalyzeSchedule(Kevin, Bryan);
-            AnalyzeSchedule(Kevin, Daniel);
-            AnalyzeSchedule(Kevin, Evan);
-            AnalyzeSchedule(Kevin, Eric);
-            AnalyzeSchedule(Kevin, Julie);
-            AnalyzeSchedule(Kevin, Kim);
-            AnalyzeSchedule(Kevin, Kyle);
-            AnalyzeSchedule(Kevin, Nate);
-            AnalyzeSchedule(Kevin, Scott);
-            Console.WriteLine("Total Wins: " + Kevin.totalWins);
+            AnalyzeSchedule(Team8);
+            AnalyzeSchedule(Team8, Team1);
+            AnalyzeSchedule(Team8, Team2);
+            AnalyzeSchedule(Team8, Team3);
+            AnalyzeSchedule(Team8, Team4);
+            AnalyzeSchedule(Team8, Team6);
+            AnalyzeSchedule(Team8, Team5);
+            AnalyzeSchedule(Team8, Team7);
+            AnalyzeSchedule(Team8, Team9);
+            AnalyzeSchedule(Team8, Team10);
+            AnalyzeSchedule(Team8, Team11);
+            AnalyzeSchedule(Team8, Team12);
+            Console.WriteLine("Total Wins: " + Team8.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Kim);
-            AnalyzeSchedule(Kim, Beth);
-            AnalyzeSchedule(Kim, Brandon);
-            AnalyzeSchedule(Kim, Bryan);
-            AnalyzeSchedule(Kim, Daniel);
-            AnalyzeSchedule(Kim, Evan);
-            AnalyzeSchedule(Kim, Eric);
-            AnalyzeSchedule(Kim, Julie);
-            AnalyzeSchedule(Kim, Kevin);
-            AnalyzeSchedule(Kim, Kyle);
-            AnalyzeSchedule(Kim, Nate);
-            AnalyzeSchedule(Kim, Scott);
-            Console.WriteLine("Total Wins: " + Kim.totalWins);
+            AnalyzeSchedule(Team9);
+            AnalyzeSchedule(Team9, Team1);
+            AnalyzeSchedule(Team9, Team2);
+            AnalyzeSchedule(Team9, Team3);
+            AnalyzeSchedule(Team9, Team4);
+            AnalyzeSchedule(Team9, Team6);
+            AnalyzeSchedule(Team9, Team5);
+            AnalyzeSchedule(Team9, Team7);
+            AnalyzeSchedule(Team9, Team8);
+            AnalyzeSchedule(Team9, Team10);
+            AnalyzeSchedule(Team9, Team11);
+            AnalyzeSchedule(Team9, Team12);
+            Console.WriteLine("Total Wins: " + Team9.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Kyle);
-            AnalyzeSchedule(Kyle, Beth);
-            AnalyzeSchedule(Kyle, Brandon);
-            AnalyzeSchedule(Kyle, Bryan);
-            AnalyzeSchedule(Kyle, Daniel);
-            AnalyzeSchedule(Kyle, Evan);
-            AnalyzeSchedule(Kyle, Eric);
-            AnalyzeSchedule(Kyle, Julie);
-            AnalyzeSchedule(Kyle, Kevin);
-            AnalyzeSchedule(Kyle, Kim);
-            AnalyzeSchedule(Kyle, Nate);
-            AnalyzeSchedule(Kyle, Scott);
-            Console.WriteLine("Total Wins: " + Kyle.totalWins);
+            AnalyzeSchedule(Team10);
+            AnalyzeSchedule(Team10, Team1);
+            AnalyzeSchedule(Team10, Team2);
+            AnalyzeSchedule(Team10, Team3);
+            AnalyzeSchedule(Team10, Team4);
+            AnalyzeSchedule(Team10, Team6);
+            AnalyzeSchedule(Team10, Team5);
+            AnalyzeSchedule(Team10, Team7);
+            AnalyzeSchedule(Team10, Team8);
+            AnalyzeSchedule(Team10, Team9);
+            AnalyzeSchedule(Team10, Team11);
+            AnalyzeSchedule(Team10, Team12);
+            Console.WriteLine("Total Wins: " + Team10.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Nate);
-            AnalyzeSchedule(Nate, Beth);
-            AnalyzeSchedule(Nate, Brandon);
-            AnalyzeSchedule(Nate, Bryan);
-            AnalyzeSchedule(Nate, Daniel);
-            AnalyzeSchedule(Nate, Evan);
-            AnalyzeSchedule(Nate, Eric);
-            AnalyzeSchedule(Nate, Julie);
-            AnalyzeSchedule(Nate, Kevin);
-            AnalyzeSchedule(Nate, Kim);
-            AnalyzeSchedule(Nate, Kyle);
-            AnalyzeSchedule(Nate, Scott);
-            Console.WriteLine("Total Wins: " + Nate.totalWins);
+            AnalyzeSchedule(Team11);
+            AnalyzeSchedule(Team11, Team1);
+            AnalyzeSchedule(Team11, Team2);
+            AnalyzeSchedule(Team11, Team3);
+            AnalyzeSchedule(Team11, Team4);
+            AnalyzeSchedule(Team11, Team6);
+            AnalyzeSchedule(Team11, Team5);
+            AnalyzeSchedule(Team11, Team7);
+            AnalyzeSchedule(Team11, Team8);
+            AnalyzeSchedule(Team11, Team9);
+            AnalyzeSchedule(Team11, Team10);
+            AnalyzeSchedule(Team11, Team12);
+            Console.WriteLine("Total Wins: " + Team11.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
 
-            AnalyzeSchedule(Scott);
-            AnalyzeSchedule(Scott, Beth);
-            AnalyzeSchedule(Scott, Brandon);
-            AnalyzeSchedule(Scott, Bryan);
-            AnalyzeSchedule(Scott, Daniel);
-            AnalyzeSchedule(Scott, Eric);
-            AnalyzeSchedule(Scott, Evan);
-            AnalyzeSchedule(Scott, Julie);
-            AnalyzeSchedule(Scott, Kevin);
-            AnalyzeSchedule(Scott, Kim);
-            AnalyzeSchedule(Scott, Kyle);
-            AnalyzeSchedule(Scott, Nate);
-            Console.WriteLine("Total Wins: " + Scott.totalWins);
+            AnalyzeSchedule(Team12);
+            AnalyzeSchedule(Team12, Team1);
+            AnalyzeSchedule(Team12, Team2);
+            AnalyzeSchedule(Team12, Team3);
+            AnalyzeSchedule(Team12, Team4);
+            AnalyzeSchedule(Team12, Team5);
+            AnalyzeSchedule(Team12, Team6);
+            AnalyzeSchedule(Team12, Team7);
+            AnalyzeSchedule(Team12, Team8);
+            AnalyzeSchedule(Team12, Team9);
+            AnalyzeSchedule(Team12, Team10);
+            AnalyzeSchedule(Team12, Team11);
+            Console.WriteLine("Total Wins: " + Team12.totalWins);
             Console.WriteLine();
             Console.ReadKey();
             Console.Clear();
@@ -482,8 +483,6 @@ namespace FFSchedulyzer2021
                 }
                 team.totalWins += team.wins;
                 team.ResetRecord();
-
-                //var table = new ConsoleTables
             }
         }
     }
